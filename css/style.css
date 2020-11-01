@@ -11,10 +11,12 @@ img{
 html{
     --main-color:rgb(25, 118, 92);
     --main-color-hover:rgb(0, 75, 205);
+    font-size: 1rem;
 }
 ul , ol{
     list-style-type: none;
     list-style: none;
+    padding: 0;
 }
 
 .site-background{
@@ -34,14 +36,24 @@ ul , ol{
 }
 .home-page-link{
     display: flex;
+    
+    font-family: 'Raleway';
+    font-size: 1.5rem;
+    display: flex;
     align-items: center;
+    padding: 0 2rem;
 }
-.home-page-link .home-icon{
-    max-width: 100%;
+.home-page-link .omid-image{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem ;
+    border: 2px solid rgb(96, 96, 96);
+
 }
 .header-middle-area{
 
-    flex: 0 1 50%;
+    flex:1;
 
 }
 .header-icon{
@@ -70,6 +82,14 @@ ul , ol{
     border-radius: 10px;
     transition: .2s;
     cursor: pointer;
+}
+.header-middle-area .header-list-container li:nth-of-type(1){
+    border-left: 3px solid var(--main-color);
+}
+.header-middle-area .header-list-container li:nth-of-type(1):hover{
+    border-right: 6px solid var(--main-color-hover);
+    border-left: 6px solid var(--main-color-hover);
+    
 }
 .header-middle-area .header-list-container li:hover{
     border-right: 6px solid var(--main-color-hover);
@@ -215,7 +235,7 @@ ul , ol{
 
 .tag:hover{
     background: linear-gradient(90deg, rgba(0,184,222,1) 0%, rgba(32,156,0,1) 100%);
-    border: 2px solid #333;
+    border: 2px solid #222;
     background-clip: content-box;
     color: transparent;
     -webkit-background-clip: text;
