@@ -305,7 +305,7 @@ a{
     border-bottom: 3px solid var(--main-color-hover);
 }
 .about-page-wrapper .omid-quote{
-    padding-left: 2rem;
+    padding: 1.2rem;
     border-radius: 6px;
     width: 60%;
     border: 1px solid var(--main-color-hover);
