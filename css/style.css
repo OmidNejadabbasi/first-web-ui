@@ -15,6 +15,10 @@ html{
     --main-color-hover:rgb(0, 75, 205);
     font-size: 1rem;
 }
+body{
+    position: relative;
+    min-height: 100vh;
+}
 ul , ol{
     list-style-type: none;
     list-style: none;
@@ -325,6 +329,7 @@ a{
     position: absolute;
     bottom: 0;
     width: 100%;
+    transform: translateY(100%);
     border-top: 1.5px solid var(--main-color-hover);
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
