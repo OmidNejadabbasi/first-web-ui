@@ -4,6 +4,10 @@
     <title>Omid.N, Home Page</title>
     
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Prim.js config -->
+    <link rel="stylesheet" href="../css/prism.css">
+    <script src="../scripts/prism.js"></script>
+
 
   </head>
 
@@ -73,9 +77,15 @@
             <p>In this article, we are going to </p>
 
 
-            <pre><code class="java">
-                public static void main(String[] args){}
-            </code></pre>
+            <pre><code class="language-java line-numbers">@Test(expected = ConcurrentModificationException.class)
+public void whilstRemovingDuringIteration_shouldThrowException() throws InterruptedException {
+                 
+    List<Integer> integers = newArrayList(1, 2, 3);
+                 
+    for (Integer integer : integers) {
+        integers.remove(1);
+    }
+}</code></pre>
 
             <h2>2. Defining your own annotaions</h2>
             <p>In this article, we are going to </p>

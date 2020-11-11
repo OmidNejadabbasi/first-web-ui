@@ -20,6 +20,9 @@ body{
     position: relative;
     min-height: 100vh;
 }
+pre{
+    font-size: 15px;
+}
 ul , ol{
     list-style-type: none;
     list-style: none;
@@ -420,7 +423,7 @@ a{
 
 /* Article item styles */
 .wrap{
-    width: 70%;
+    width: 80%;
     margin-right: auto;
     padding:30px 100px;
     font-size: 28px;
