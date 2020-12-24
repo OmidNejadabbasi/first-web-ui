@@ -126,7 +126,7 @@ a{
 
 .site-content-area{}
 
-.site-content-area .home-page-toturials, .site-content-area .home-page-articles{
+.site-content-area .home-page-list-container .site-content-area .home-page-list-container{
     padding: 1.5rem;
     margin-bottom: 2rem;
     margin-right: 2rem;
@@ -147,11 +147,11 @@ a{
     padding-left: 1.2rem;
 
 }
-.home-page-toturials-list{
+.home-page-java-items-list{
     padding-left: 2rem;
 }
 @media(max-width:800px){
-    .home-page-toturials-list{
+    .home-page-java-items-list{
         padding-left: 1.2rem;
     }
 }
