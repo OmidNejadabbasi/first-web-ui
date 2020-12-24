@@ -7,7 +7,7 @@
 img{
     display: block;
 }
-.site-header, .toturial-item,.article-item, .site-content-area .part-header, .about-page-wrapper,.site-footer{
+.site-header, .list-item-container,.article-item, .site-content-area .part-header, .about-page-wrapper,.site-footer{
     background-color: white;
 }
 html{
@@ -163,7 +163,7 @@ a{
 } */
 
 /* Toturial item styles */
-.toturial-item{
+.list-item-container{
     padding: 1rem;
     margin-bottom:15px ;
     box-shadow: 0px 5px 15px -6px rgba(0, 0, 0, 0.8);
@@ -171,7 +171,7 @@ a{
     border: 1px solid var(--main-color-hover);
 }
 
-.toturial-item .toturial-title{
+.list-item-container .list-item-title{
     font-family: 'Quicksand' ,'Times New Roman', Times, serif;
     font-size: 1.5rem;
     font-weight: 500;
@@ -179,13 +179,13 @@ a{
     margin-top: .5rem;
     margin-bottom: .8rem;
 }
-.toturial-item .toturial-image{
+.list-item-container .list-item-image{
     width: 150px;
     max-height: 150px;
     float: left;
     margin-right: 1.5rem;
 }
-.toturial-item .toturial-meta-div{
+.list-item-container .meta-div{
     position: relative;
     clear: both;
     margin-top: 30px;
@@ -199,14 +199,14 @@ a{
     border-radius: 5px;
     background-image: linear-gradient(90deg, rgba(0,211,255,1) 0%, rgba(139,0,208,1) 100%);;
 }
-.toturial-item .toturial-abstract{
+.list-item-container .list-item-abstract{
     font-family: 'Red Hat Display','Times New Roman', Times, serif;
     text-indent: 1.3rem;
     font-size: 1.1rem;
     
 }
 
-.toturial-item .toturial-abstract::before{
+.list-item-container .list-item-abstract::before{
     
     content: 'Abstract: ';
     color: #333;
@@ -215,14 +215,14 @@ a{
     
 }
 
-.toturial-item .dificulty{
+.list-item-container .dificulty{
     position: absolute;
     display: flex;
     align-items: center;
     bottom: 0;
     right: 15px;
 }
-.toturial-item .dificulty .dificulty-icon{
+.list-item-container .dificulty .dificulty-icon{
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -230,17 +230,17 @@ a{
     background-position: 50%; 
 }
 
-.toturial-item .dificulty .dificulty-icon[data-level="advanced"]{
+.list-item-container .dificulty .dificulty-icon[data-level="advanced"]{
     background-image: url('../ico/level-advanced.svg') ;
 }
-.toturial-item .dificulty .dificulty-icon[data-level="intermediate"]{
+.list-item-container .dificulty .dificulty-icon[data-level="intermediate"]{
     background-image: url('../ico/level-intermediate.svg') ;
 }
-.toturial-item .dificulty .dificulty-icon[data-level="begginer"]{
+.list-item-container .dificulty .dificulty-icon[data-level="begginer"]{
     background-image: url('../ico/level-begginer.svg') ;
 }
 
-.toturial-item .dificulty .dificulty-name{
+.list-item-container .dificulty .dificulty-name{
     margin-left: .5rem;
     text-transform: capitalize;
 }
