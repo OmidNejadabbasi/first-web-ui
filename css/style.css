@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Emilys+Candy&family=Forum&family=Fredericka+the+Great&family=Great+Vibes&family=Poiret+One&family=Quicksand&family=Raleway:wght@200;300;400;500;600;700&family=Red+Hat+Display&family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Langar&family=Cinzel&family=Emilys+Candy&family=Forum&family=Fredericka+the+Great&family=Great+Vibes&family=Poiret+One&family=Quicksand&family=Raleway:wght@200;300;400;500;600;700&family=Red+Hat+Display&family=Shadows+Into+Light+Two&display=swap");
+/* this block is temporary */
+.temp{
+    color: #666;
+    text-align: center;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
 
 *{
     margin: 0;
@@ -114,7 +121,7 @@ a{
 
 .site-wrapper{
     display: grid;
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: max-content 1fr;
 }
 
@@ -126,19 +133,24 @@ a{
 
 .site-content-area{}
 
-.site-content-area .home-page-list-container .site-content-area .home-page-list-container{
+.site-content-area .home-page-list-container{
     padding: 1.5rem;
     margin-bottom: 2rem;
     margin-right: 2rem;
     
 }
 
+.lang-name{
+    font-family: 'Langar', 'Poiret One', Times;
+    font-size: 1.15em;
+}
+
 .site-content-area .part-header{
 
-    font-family:'Cinzel', 'Quicksand' ,'Times New Roman', Times, serif;
-    font-size: 1.7rem;
+    font-family:'Poiret One','Quicksand' ,'Times New Roman', Times, serif;
+    font-size: 1.4rem;
     /* font-weight: 700; */
-    line-height: 5rem;
+    line-height: 4.4rem;
     border-left: 4px solid var(--main-color);
     border-top: 1px solid var(--main-color);
     box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.8);
@@ -165,7 +177,7 @@ a{
 /* Toturial item styles */
 .list-item-container{
     padding: 1rem;
-    margin-bottom:15px ;
+    margin:0 15px 15px ;
     box-shadow: 0px 5px 15px -6px rgba(0, 0, 0, 0.8);
     border-radius: 12px;
     border: 1px solid var(--main-color-hover);
