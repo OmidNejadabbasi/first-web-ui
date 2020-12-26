@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Omid.N, Home Page</title>
-    
+
     <link rel="stylesheet" href="../css/style.css">
     <!-- Prim.js config -->
     <link rel="stylesheet" href="../css/prism.css">
     <script src="../scripts/prism.js"></script>
 
+</head>
 
-  </head>
-
-  <body>
+<body>
     <!-- <img class="site-background" src="../ico/background.svg"> -->
     <header class="site-header">
         <div class="home-page-link">
@@ -53,45 +53,82 @@
     </header>
 
     <main class="wrap">
-      <div class="content">
-        <header>
-          <h1 class="entry-title">
-            Avoiding the <i>ConcurrentModificationException</i><br> in Java
-          </h1>
-          <time class="last-modified">
-              <p>Last Modified: <span>March 23th, 2020</span>
-            </p>
-            </time>
-          <div class="meta-row">
-            <div class="author">
-                <span class="author-by">by</span>
-                <span class="author-name">Omid Nejadabbasi</span>
-            </div>
-          </div>
-        </header>
-        <section class="article-content">
-            <h2>1. Introduction</h2>
-            <p>In this article, we are going to </p>
-            <p>In this article, we are going to </p>
-            <p>In this article, we are going to </p>
-            <p>In this article, we are going to </p>
+        <div class="content">
+            <header>
+                <h1 class="entry-title">
+                    The first coding problem I solved!
+                </h1>
+                <time class="last-modified">
+                    <p>Last Modified: <span>December 26th, 2020</span>
+                    </p>
+                </time>
+                <div class="meta-row">
+                    <div class="author">
+                        <span class="author-by">by</span>
+                        <span class="author-name">Omid Nejadabbasi</span>
+                    </div>
+                </div>
+            </header>
+            <section class="article-content">
+                <h2>1. My first code</h2>
+                <p>I remember that at first days of my coding, I got really excited when I solved my first coding drill.
+                </p>
+                <p>
+                    Back then, I was 16 and I was learning the Java programming language.
+                    After solving that problem, I decided that I will continue programming to the end of my life.
+                    So in this post, I'll describe the problem and then solve it with Python programming language.
+                    If it is also the first coding drill you’re going to face, take your time to solve it and give
+                    yourself a gift if you get it right!</p>
 
 
-            <pre><code class="language-java line-numbers">@Test(expected = ConcurrentModificationException.class)
-public void whilstRemovingDuringIteration_shouldThrowException() throws InterruptedException {
-                 
-    List<Integer> integers = newArrayList(1, 2, 3);
-                 
-    for (Integer integer : integers) {
-        integers.remove(1);
-    }
-}</code></pre>
+                <h2>2. Let's get this done!</h2>
 
-            <h2>2. Defining your own annotaions</h2>
-            <p>In this article, we are going to </p>
-            <p>In this article, we are going to </p>
-        </section>
-      </div>
+                <p>The problem gives you a number and you have to print its inverse.
+                    Like if it gives you 1234, you have to print 4321. But notice that you can do this easily in Python
+                    with only one line of code :</p>
+
+                <pre><code class="language-python line-numbers">print(input()[::-1])</code></pre>
+
+                <p>But we want you to convert the input to a integer and then do some math in it then reverse it.</p>
+
+                <p>Please try to solve it in your IDE then move to the solution. 😊</p>
+
+                <h2>3. The answer!</h2>
+
+                <p>First I am going to show you the code then I will explain how it works!</p>
+
+                <pre><code class="language-python line-numbers">n = int(input('Enter the number: '))
+reverse = 0
+while n > 0:
+    first_digit = n % 10
+    reverse = (reverse * 10) + first_digit
+    n = n // 10
+                
+print(reverse)
+                </code></pre>
+
+                <br>
+
+                <p>First, we define a variable named <code class="language-python">reversed</code> to hold the result.
+                    We update it on every step of the loop.
+                    Then we enter a while loop with the condition that <code class="language-python">n</code> should be
+                    greater than 0. </p>
+
+                <p>At first line of the loop we store the first digit of <code class="language-python">n</code> in the
+                    variable <code class="language-python">first_digit</code>, by obtaining its
+                    modulo 10.
+                    Then we add it as the next digit to <code class="language-python">reversed</code> . Now that we are
+                    done with the first digit of <code class="language-python">n</code>, we
+                    have to take it out.
+                    We do it by floor division operator. When the number n runs out of digits it is no longer greater
+                    than 0 and we exit the while loop. Then print reverse!</p>
+
+                <p>If you wanna see how this code works, use your IDE’s debuging tools to see what are the values of
+                    these variables.</p>
+                <br><br><br>
+                <footer>***</footer>
+            </section>
+        </div>
     </main>
 
     <footer class="site-footer">
@@ -122,5 +159,6 @@ public void whilstRemovingDuringIteration_shouldThrowException() throws Interrup
             <p>All Icons form <a href="http://icons8.com">icons8.com</a></p>
         </div>
     </footer>
-  </body>
+</body>
+
 </html>
