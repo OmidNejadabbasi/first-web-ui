@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omid.N, Home Page</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Prim.js config -->
+    <link rel="stylesheet" href="../css/prism.css">
+    <script src="../scripts/prism.js"></script>
+
+
+  </head>
+
+  <body>
+    <!-- <img class="site-background" src="../ico/background.svg"> -->
+    <header class="site-header">
+        <div class="home-page-link">
+            <img class="omid-image" src="../ico/placeholder.png">
+            <a>Omid's Blog</a>
+        </div>
+        <nav class="header-middle-area">
+            <ul class="header-list-container">
+                <li>
+                    <a href="../index.html">
+                        <img class="header-icon" src="../ico/home.png">
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../java-room/index.html">
+                        <img class="header-icon" src="../ico/java.svg">
+                        <span>Java room</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../python-room/index.html">
+                        <img class="header-icon" src="../ico/python.svg">
+                        <span>Python room</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../about.html">
+                        <img class="header-icon" src="../ico/about.svg">
+                        <span>About</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="wrap">
+      <div class="content">
+        <header>
+          <h1 class="entry-title">
+            Avoiding the <i>ConcurrentModificationException</i><br> in Java
+          </h1>
+          <time class="last-modified">
+              <p>Last Modified: <span>March 23th, 2020</span>
+            </p>
+            </time>
+          <div class="meta-row">
+            <div class="author">
+                <span class="author-by">by</span>
+                <span class="author-name">Omid Nejadabbasi</span>
+            </div>
+          </div>
+        </header>
+        <section class="article-content">
+            <h2>1. Introduction</h2>
+            <p>In this article, we are going to </p>
+            <p>In this article, we are going to </p>
+            <p>In this article, we are going to </p>
+            <p>In this article, we are going to </p>
+
+
+            <pre><code class="language-java line-numbers">@Test(expected = ConcurrentModificationException.class)
+public void whilstRemovingDuringIteration_shouldThrowException() throws InterruptedException {
+                 
+    List<Integer> integers = newArrayList(1, 2, 3);
+                 
+    for (Integer integer : integers) {
+        integers.remove(1);
+    }
+}</code></pre>
+
+            <h2>2. Defining your own annotaions</h2>
+            <p>In this article, we are going to </p>
+            <p>In this article, we are going to </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+        <ul class="footer-link-list">
+            <li>
+                <a href="../index.html">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="../java-room/index.html">
+                    <span>Java room</span>
+                </a>
+            </li>
+            <li>
+                <a href="../python-room/index.html">
+                    <span>Python room</span>
+                </a>
+            </li>
+            <li>
+                <a href="../about.html">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+        <div class="copyright-note">
+            <p>© Copyright by Omid Nejadabbasi - 2020</p>
+            <p>All Icons form <a href="http://icons8.com">icons8.com</a></p>
+        </div>
+    </footer>
+  </body>
+</html>
